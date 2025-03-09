@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title><%= title %></title>
+    </head>
+    <body>
+        <h1>My name: <%= name %></h1>
+        <h1><%= title %></h1>
+        <ul>
+            <% definitions.forEach(function(def) { %>
+                <li><%= def.tech %> : <%=def.desc %></li>
+            <% }); %>
+        </ul>
+        
+    </body>
+</html>
